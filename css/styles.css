@@ -3,86 +3,81 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
-    background-color: #fefefe;
-}
-
-body {
+    box-sizing: border-box;
     font-family: sans-serif;
+    border: 1px solid black;
 }
 
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px 10px 10px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+    background: green;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rebeccapurple;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-y-titulo {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     display: flex;
-    align-items: center;
-    flex-grow: 1;
-
-}
-
-.logo img {
     height: 100px;
-    margin-right: 10px;
-    margin-left: 50px;
-
+    width: 100px;
+    margin: 0 50px 0 0;
 }
-
-.logo-nombre {
-    flex-grow: 1;
-    margin: 0;
-}
-
-nav {
-    display: flex;
-}
-
-nav ul {
-    display: flex;
-    margin-right: 180px;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    padding: 10px;
-    font-size: 20px;
-}
-
-a {
-    color: black;
-
-}
-
-nav ul li a:hover {
-    border-bottom: 1.6px solid rebeccapurple;
-    color: rebeccapurple;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 5);
-}
-
 
 section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    /* Alinea el contenido verticalmente */
-    justify-content: center;
     padding: 20px;
+    justify-content: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.servicios-text-content h2 {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.servicios-text-content p {
+    display: flex;
+    text-align: center;
+}
+
+section img {
+    width: 500px;
+    border-radius: 10px;
 }
 
 .servicios-text-content {
     width: 50%;
-    /* El texto ocupa el 50% del ancho del contenedor */
     padding: 0 20px;
-    /* Añade espacio alrededor del texto */
-    align-items: center;
 }
 
 #contact_form {
@@ -99,14 +94,4 @@ section {
     max-width: 400px;
     /* Limita el ancho máximo para evitar que el formulario sea demasiado ancho */
     margin: auto;
-}
-
-section img {
-    width: 400px;
-}
-
-
-h2 {
-    text-align: center;
-    margin: 20px;
 }
