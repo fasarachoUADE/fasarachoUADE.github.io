@@ -5,82 +5,9 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: sans-serif;
-    border: 1px solid black;
+    background-color: EAEAEA;
 }
 
-
-header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: green;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-header nav a {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    color: rebeccapurple;
-    margin-right: 30px;
-    margin-left: 20px;
-}
-
-header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo-y-titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 1000px;
-}
-
-.logo {
-    display: flex;
-    height: 100px;
-    width: 100px;
-    margin: 0 50px 0 0;
-}
-
-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    justify-content: center;
-    font-size: 25px;
-}
-
-.servicios-text-content h2 {
-    display: flex;
-    margin-bottom: 15px;
-    justify-content: center;
-}
-
-.servicios-text-content p {
-    display: flex;
-    text-align: center;
-}
-
-section img {
-    width: 500px;
-    border-radius: 10px;
-}
-
-.servicios-text-content {
-    width: 50%;
-    margin: 20px;
-}
 
 #contact_form {
     display: flex;
@@ -96,4 +23,98 @@ section img {
     max-width: 400px;
     /* Limita el ancho máximo para evitar que el formulario sea demasiado ancho */
     margin: auto;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #235b48;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.socialIcons a:nth-child(2) img {
+    width: 70px;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a img:hover {
+    transform: scale(1.10, 1.10);
+}
+
+
+.footerNav {
+
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: #DBF9F4;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+#encontranos {
+    border-top: 0.1px solid;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: black;
+}
+
+.footerBottom {
+    background-color: #065143;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 600px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
 }
