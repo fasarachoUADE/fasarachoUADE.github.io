@@ -89,6 +89,22 @@ body {
     transform: scale(1.1);
 }
 
+#propuesta {
+    display: flex;
+    height: 100vh;
+    border: solid 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#contacto {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #contact_form {
     display: flex;
