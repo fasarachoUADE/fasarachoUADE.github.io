@@ -16,6 +16,14 @@
     height: 85px;
     padding: 5px 10%;
     margin-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    padding-top: 100px;
 }
 
 .header .nav-links li a {
@@ -38,7 +46,6 @@
 
 .header .nav-links {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -177,7 +184,7 @@ footer {
     margin: 0px 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .footerNav ul {
         flex-direction: column;
     }
@@ -192,4 +199,18 @@ footer {
         padding: 8px;
         margin: 4px;
     }
+
+    .header {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+
+
+    .header .btn button {
+        margin-right: 40px;
+        padding: 9px 20px;
+    }
+
 }
