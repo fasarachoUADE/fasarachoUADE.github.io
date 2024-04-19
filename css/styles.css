@@ -31,6 +31,10 @@ section {
     align-items: center;
 }
 
+span {
+    display: none;
+}
+
 .sections-text-content {
     width: 500px;
     align-items: center;
@@ -54,9 +58,8 @@ section {
 
 #mision .sections-text-content {
     display: flex;
-    width: 500px;
-    height: 700px;
     background: none;
+    flex-wrap: wrap;
 }
 
 #mision .sections-text-content p {
@@ -66,14 +69,16 @@ section {
     font-weight: 800;
     font-size: 40px;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 #mision .vida-saludable .imagen-vida-saludable {
     height: 700px;
-    margin-right: 100px;
+    width: auto;
 }
 
 #servicios {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -83,6 +88,7 @@ section {
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 #servicios .sections-text-content .parrafos p {
@@ -108,6 +114,9 @@ section {
 }
 
 #servicios .sections-text-content .parrafos {
+
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 4px;
     height: 450px;
     width: 40%;
@@ -199,6 +208,7 @@ section {
 
 #propuesta .sections-text-content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #propuesta .negrito {
@@ -349,13 +359,27 @@ footer {
 }
 
 .designer {
+    display: block;
     opacity: 0.7;
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+
+    span {
+        display: flex;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: end;
+        color: rgb(83, 119, 94);
+    }
+
+    .designer {
+        text-align: center;
+    }
+
     .footerNav ul {
         flex-direction: column;
     }
@@ -381,10 +405,88 @@ footer {
         font-size: 15px;
     }
 
-
     .header .btn button {
         margin: 10px;
         padding: 10px;
     }
+
+    #servicios {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        width: 100%;
+    }
+
+    #servicios .sections-text-content {
+        height: 100%;
+    }
+
+    #servicios .sections-text-content .parrafos h2 {
+        display: none;
+    }
+
+    #mision .vida-saludable .imagen-vida-saludable {
+        display: none;
+    }
+
+    #mision .sections-text-content {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        padding: 0;
+    }
+
+    #mision .sections-text-content p {
+        font-size: 45px;
+        justify-content: start;
+        text-align: star;
+    }
+
+    #servicios {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    #servicios .sections-text-content {
+        display: flex;
+    }
+
+    #servicios .sections-text-content img {
+        display: none;
+
+    }
+
+    #propuesta .sections-text-content .not-in-phones {
+        display: none;
+    }
+
+    #servicios .sections-text-content .parrafos {
+        display: flex;
+        width: 100%;
+    }
+
+    #propuesta {
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    #propuesta .sections-text-content {}
+
+    #propuesta .sections-text-content:nth-child(1) {
+        margin-top: 100px;
+    }
+
+    #propuesta .sections-text-content p {
+        font-size: 13px;
+    }
+
 
 }
