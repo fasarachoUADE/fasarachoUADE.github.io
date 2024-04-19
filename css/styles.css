@@ -221,21 +221,61 @@ section {
     justify-content: center;
 }
 
-
-#contact_form {
-    display: flex;
-    flex-direction: column;
-    /* Organiza los campos del formulario en una columna */
-    align-items: center;
-    /* Centra los campos del formulario horizontalmente */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Opcional: Añade una sombra para resaltar el formulario */
+.form-register {
     width: 100%;
-    /* Usa el 100% del ancho del contenedor padre */
-    max-width: 400px;
-    /* Limita el ancho máximo para evitar que el formulario sea demasiado ancho */
+    height: 400px;
+    background: #ffffff;
+    padding: 10px;
     margin: auto;
+    margin-top: 0px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(59, 127, 105);
+    box-shadow: 7px 13px 37px #2e4a2c;
+}
+
+.form-register h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #9cab9f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #8ba646;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 0px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #243a16;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 footer {

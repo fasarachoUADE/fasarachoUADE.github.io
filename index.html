@@ -46,10 +46,11 @@
                     <h3>Nuestra sucursal</h3>
                     <p>
                         Visita nuestro espacio dedicado a la salud y el sabor, donde podrás disfrutar
-                        de comidas y snacks preparados con ingredientes frescos y ricos en proteínas. Elige entre
-                        sentarte a
-                        comer
-                        en un amb
+                        de
+                        comidas y snacks preparados con ingredientes frescos y ricos en proteínas. Elige entre sentarte
+                        a comer
+                        en un ambiente acogedor, llevar tu pedido contigo o hacer un pedido en línea para una recogida
+                        rápida.
                     </p>
                     <h3> Pedidos al por mayor</h3>
                     <p>
@@ -150,35 +151,16 @@
         <section id="contacto">
 
             <div class="sections-text-content">
-                <h2>¡Recibí nuestra propuesta!</h2>
+                <section class="form-register">
+                    <form method="POST" action="#">
+                        <h4>¡Recibí nuestra propuesta!</h4>
+                        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
+                        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellido">
+                        <input class="controls" type="email" name="correo" id="correo" placeholder="Email">
+                        <input class="botons" type="submit" value="Recibir información">
+                    </form>
 
-                <form id="contact_form" action="contact_us_form" method="POST">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="name" required placeholder="Nombre">
-                    </div>
-                    <div>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="surname" required placeholder="Appellido">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="phone-number" placeholder="Teléfono de contacto">
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="message" rows="4" required
-                            placeholder="Dejanos tu mensaje"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
-            </div>
+                </section>
         </section>
     </main>
 
@@ -195,7 +177,6 @@
                     <li><a href="#mision">Misión</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#encontranos">Encuentranos</a></li>
                 </ul>
             </div>
         </div>
